@@ -1,6 +1,10 @@
 # UnBotAcademy
 
 An online learning platform I have developed for studying different courses, from your computer.
+Author: Saif Ul Islam Khan
+Language: Node.js, Express.js, MongoDB.
+
+Features:
 
 📚 Diverse Course Catalog
 UnBot Academy offers a comprehensive catalog of courses spanning various subjects and disciplines. Whether you're interested in technology, arts, sciences, or professional development, you'll find courses tailored to your interests.
@@ -34,5 +38,7 @@ Administrators have access to a powerful dashboard for managing courses, users, 
 
 🎨 Customization and Branding
 Instructors can customize their course pages and branding to create a unique and immersive learning experience.
+
+
 
 
