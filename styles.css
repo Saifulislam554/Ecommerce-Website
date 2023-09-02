@@ -1,0 +1,127 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Global styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  header ul li {
+    margin-right: 20px;
+  }
+  
+  header ul li:last-child {
+    margin-right: 0;
+  }
+  
+  header a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  /* Home page styles */
+  .home-page .hero {
+    text-align: center;
+    padding: 100px 0;
+  }
+  
+  .home-page h1 {
+    font-size: 36px;
+  }
+  
+  .home-page p {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .cta-button:hover {
+    background-color: #555;
+  }
+  
+  /* Shop page styles */
+  .shop-page {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+  }
+  
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .product-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    width: calc(33.33% - 20px);
+    box-sizing: border-box;
+  }
+  
+  .product-card img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .product-card h2 {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  
+  .product-card p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+ 
+  
+  

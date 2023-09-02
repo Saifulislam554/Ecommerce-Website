@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Shop | E-commerce Website</title>
+    <style>
+    /* Reset some default styles */
+body, h1, h2, h3, p, ul, li, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color for the entire page */
+body {
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Style the header to match the website's design */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Style the navigation menu within the header */
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Style the product filters sidebar */
+#product-filters {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#product-filters h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+select, input[type="range"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#price-value {
+    display: block;
+    font-weight: bold;
+    margin-top: 5px;
+    color: #e91e63;
+}
+
+
+#product-listings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: calc(33.33% - 20px); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.product img:hover {
+    transform: scale(1.05);
+}
+
+.product h3 {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #333;
+}
+
+.product p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.product strong {
+    color: #e91e63;
+}
+
+/* Style the "Add to Cart" button */
+button {
+    background-color: #e91e63;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #c2185b;
+}
+
+/* Style the pagination controls */
+#pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#pagination a {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 5px;
+    background-color: #e91e63;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+#pagination a:hover {
+    background-color: #c2185b;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/shop">Shop</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <aside id="product-filters">
+           
+            <h2>Filter Products</h2>
+            <label for="category">Category:</label>
+            <select id="category">
+                <option value="all">All Categories</option>
+                <option value="electronics">Electronics</option>
+                <option value="clothing">Clothing</option>
+            </select>
+            
+            <label for="price-range">Price Range:</label>
+            <input type="range" id="price-range" min="0" max="100" value="50">
+            <span id="price-value">$50</span>
+        </aside>
+
+        <main id="product-listings">
+            <div class="product">
+                <img src="product1.jpg" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>Description of Product 1.</p>
+                <p><strong>Price:</strong> $49.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="product2.jpg" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>Description of Product 2.</p>
+                <p><strong>Price:</strong> $59.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div id="pagination">
+                <a href="#">&laquo; Previous</a>
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">Next &raquo;</a>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Your E-commerce Store. All rights reserved.</p>
+    </footer>
+
+    <script src="/public/js/app.js"></script>
+</body>
+</html>
